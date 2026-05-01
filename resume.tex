@@ -1,11 +1,10 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -20,44 +19,31 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.1in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -76,13 +62,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -91,128 +70,119 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-    \href{https://github.com/...}{\underline{github.com/jake}}
+    \textbf{\Huge \scshape Ignacio Diago Valeta} \\ \vspace{1pt}
+    \small Vinalesa, Valencia, Spain $|$
+    \href{mailto:nadiva1243@gmail.com}{\underline{nadiva1243@gmail.com}} \\ \vspace{2pt}
+    \small
+    \textbf{\href{https://www.linkedin.com/in/ignacio-diago-valeta-1234567891011121314/?locale=en_US}{\underline{LinkedIn}}} $|$
+    \textbf{\href{https://github.com/iDiagoValeta}{\underline{GitHub}}} $|$
+    \textbf{\href{https://huggingface.co/nadiva1243}{\underline{Hugging Face}}} $|$
+    \textbf{\href{https://portfolio-chat-aouj.onrender.com}{\underline{Interactive Portfolio}}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
-    \resumeSubheading
-      {Blinn College}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+      {Universitat Politecnica de Valencia (UPV)}{Valencia, Spain}
+      {Computer Engineer, Computing Specialization}{2026}
+      \resumeItemListStart
+        \resumeItem{Focused on algorithms, data structures, parallel computing, artificial intelligence, machine learning, mathematical foundations, and software architecture}
+        \resumeItem{Additional certifications in Python for Data Science, Linux Fundamentals, SQL and R for Data Analysis, and Mathematical Foundations for Machine Learning}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {Inditex Tech Ambassador}{Apr. 2026 -- Present}
+      {Inditex}{Spain}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItem{Selected for a university STEM talent program connecting students with Inditex's global technology teams}
+        \resumeItem{Participate in mentoring, networking, and exclusive technology events focused on applied engineering and innovation}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
+      {AI \& Back-End Developer}{Oct. 2025 -- Present}
+      {Grupo Educativo CEU}{Valencia, Spain}
       \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    \resumeItemListEnd
+        \resumeItem{Develop and deploy GPT-CEU, a custom generative AI assistant using OpenAI/Azure APIs and RAG pipelines to optimize academic and administrative workflows}
+        \resumeItem{Connect language models with institutional data sources to provide real-time information to staff and students}
+        \resumeItem{Build back-end services and document AI automations for production educational operations}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
+      {Museum Guide \& Technical Workshop Instructor}{Feb. 2025 -- Jun. 2025}
+      {Museo de Informatica, Universitat Politecnica de Valencia}{Valencia, Spain}
       \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+        \resumeItem{Designed and delivered technical workshops on robotics, cryptography, and programming for diverse audiences}
+        \resumeItem{Led guided visits on the history of computing, adapting technical explanations to students and general visitors}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Private Tutor}{Jan. 2022 -- Jan. 2025}
+      {Superprof}{Valencia, Spain}
+      \resumeItemListStart
+        \resumeItem{Provided personalized instruction in mathematics, physics, and technical drawing for secondary and pre-university students}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          {\textbf{MonkeyGrab / Local On-Premises RAG System} $|$ \emph{Ollama, ChromaDB, LlamaIndex, Flask, React}}{2026}
           \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
+            \resumeItem{Built a privacy-focused multilingual RAG system for PDFs as a final degree project, without dependency on external APIs}
+            \resumeItem{Implemented hybrid semantic and lexical retrieval with a Flask back end and React web interface}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          {\textbf{OCR-to-CRM Automation Pipeline} $|$ \emph{Azure Functions, Document Intelligence, GPT}}{2025}
           \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+            \resumeItem{Developed a serverless Azure pipeline that transforms handwritten academic enrollment forms into CRM records}
+            \resumeItem{Combined OCR extraction, structured validation, and GPT-based reasoning; deployed in production at CEU}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Interactive Portfolio Web} $|$ \emph{React, TypeScript, Tailwind CSS, Conversational UI}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built an interactive personal portfolio that presents technical projects through a conversational web experience}
+            \resumeItem{Designed and deployed a responsive interface to centralize professional links, AI work, and software engineering projects}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Dataset Creator} $|$ \emph{Python, PDF Processing, JSONL, QA Generation}}{2025}
+          \resumeItemListStart
+            \resumeItem{Created a reproducible local pipeline for generating supervised QA datasets from PDFs with language detection and quality controls}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Generative AI, LLMs \& NLP}{: RAG, fine-tuning, PEFT/QLoRA, LangChain, LlamaIndex, Ollama, ChromaDB, Hugging Face Transformers, prompt engineering, RAGAS, BERTScore} \\
+     \textbf{Machine Learning \& Computer Vision}{: PyTorch, TensorFlow, Keras, Scikit-learn, Vision Transformers, OpenCV, MediaPipe} \\
+     \textbf{Data Pipelines \& Document AI}{: Azure Document Intelligence, PDF parsing, OCR structuring, MLOps, Weights \& Biases, Git, Linux, Docker fundamentals} \\
+     \textbf{Cloud, Back End \& Front End}{: Azure Functions, Azure Blob Storage, Flask, REST APIs, React, TypeScript, Tailwind CSS} \\
+     \textbf{Programming Languages}{: Python (advanced), JavaScript/TypeScript, SQL, R, C} \\
+     \textbf{Languages Spoken}{: Spanish (native), English (full professional proficiency, Cambridge B2), Valencian (native, GVA certified)}
     }}
  \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
