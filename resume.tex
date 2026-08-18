@@ -15,6 +15,8 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
@@ -83,7 +85,8 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Ignacio Diago Valeta} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Ignacio Diago Valeta} \\ \vspace{2pt}
+    \small AI \& Back-End Engineer $|$ LLM systems in production \\ \vspace{2pt}
     \small Vinalesa, Valencia, Spain $|$ +34 645 98 70 21 $|$
     \href{mailto:nadiva1243@gmail.com}{\underline{nadiva1243@gmail.com}} \\ \vspace{2pt}
     \small
@@ -92,18 +95,6 @@
     \textbf{\href{https://huggingface.co/nadiva1243}{\underline{Hugging Face}}} $|$
     \textbf{\href{https://portfolio-chat-aouj.onrender.com}{\underline{Interactive Portfolio}}}
 \end{center}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Universitat Politecnica de Valencia (UPV)}{Valencia, Spain}
-      {Computer Engineer, Computing Specialization}{2026}
-      \resumeItemListStart
-        \resumeItem{Focused on algorithms, data structures, parallel computing, artificial intelligence, machine learning, mathematical foundations, and software architecture}
-        \resumeItem{Additional certifications in Python for Data Science, Linux Fundamentals, SQL and R for Data Analysis, and Mathematical Foundations for Machine Learning}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -114,33 +105,23 @@
       {Auro AI}{Valencia, Spain}
       \resumeItemListStart
         \resumeItem{Lead the technical development of an AI assistant that reads energy and telecom bills over WhatsApp and switches users to the best tariff available in Spain}
-        \resumeItem{Own and evolve the back-end architecture of a TypeScript monorepo (REST API, conversational agent, internal CRM) running on PostgreSQL, Docker, pm2 and Google Cloud Platform}
-        \resumeItem{Act as the technical reference for the team: code review, engineering standards, and definition of development best practices}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Inditex Tech Ambassador}{Apr. 2026 -- Present}
-      {Inditex}{Spain}
-      \resumeItemListStart
-        \resumeItem{Selected for a university STEM talent program connecting students with Inditex's global technology teams}
-        \resumeItem{Participate in mentoring, networking, and exclusive technology events focused on applied engineering and innovation}
+        \resumeItem{Own the back-end architecture of a six-app TypeScript monorepo (REST API, conversational agent on Mastra and Vertex AI, internal CRM) over PostgreSQL, Docker and Google Cloud Platform, released to two servers with zero-downtime deploys and automatic rollback}
+        \resumeItem{Set the engineering standard for a team of four (mandatory code review, protected main, 80\% coverage gate on new code) and merged over 280 reviewed pull requests since June 2026}
       \resumeItemListEnd
 
     \resumeSubheading
       {AI \& Back-End Developer}{Oct. 2025 -- Jun. 2026}
       {Grupo Educativo CEU}{Valencia, Spain}
       \resumeItemListStart
-        \resumeItem{Developed and deployed GPT-CEU, a custom generative AI assistant using OpenAI/Azure APIs and RAG pipelines to optimize academic and administrative workflows}
-        \resumeItem{Connected language models with institutional data sources to provide real-time information to staff and students}
-        \resumeItem{Built back-end services and document AI automations for production educational operations}
+        \resumeItem{Developed and deployed GPT-CEU, a generative AI assistant serving the group's three universities over web and WhatsApp, with role-aware routing for students, faculty and staff}
+        \resumeItem{Connected language models to institutional data sources through serverless Azure Functions and RAG pipelines, answering with real-time academic information in production}
       \resumeItemListEnd
 
     \resumeSubheading
       {Museum Guide \& Technical Workshop Instructor}{Feb. 2025 -- Jun. 2025}
-      {Museo de Informatica, Universitat Politecnica de Valencia}{Valencia, Spain}
+      {Museo de Inform\'atica, Universitat Polit\`ecnica de Val\`encia}{Valencia, Spain}
       \resumeItemListStart
-        \resumeItem{Designed and delivered technical workshops on robotics, cryptography, and programming for diverse audiences}
-        \resumeItem{Led guided visits on the history of computing, adapting technical explanations to students and general visitors}
+        \resumeItem{Designed and delivered technical workshops on robotics, cryptography and programming, and led guided visits on the history of computing for students and general visitors}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -158,20 +139,14 @@
       \resumeProjectHeading
           {\textbf{MonkeyGrab / Local On-Premises RAG System} $|$ \emph{Ollama, ChromaDB, LlamaIndex, Flask, React}}{2026}
           \resumeItemListStart
-            \resumeItem{Built a privacy-focused multilingual RAG system for PDFs as a final degree project, without dependency on external APIs}
+            \resumeItem{Built a privacy-focused multilingual RAG system for PDFs as a final degree project, with no dependency on external APIs}
             \resumeItem{Implemented hybrid semantic and lexical retrieval with a Flask back end and React web interface}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{OCR-to-CRM Automation Pipeline} $|$ \emph{Azure Functions, Document Intelligence, GPT}}{2026}
+          {\textbf{OCR-to-CRM Automation Pipeline} $|$ \emph{Azure Functions, Document Intelligence, GPT-4, RapidFuzz}}{2026}
           \resumeItemListStart
-            \resumeItem{Developed a serverless Azure pipeline that transforms handwritten academic enrollment forms into CRM records}
-            \resumeItem{Combined OCR extraction, structured validation, and GPT-based reasoning; deployed in production at CEU}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Interactive Portfolio Web} $|$ \emph{React, TypeScript, Tailwind CSS, Conversational UI}}{2026}
-          \resumeItemListStart
-            \resumeItem{Built an interactive personal portfolio that presents technical projects through a conversational web experience}
-            \resumeItem{Designed and deployed a responsive interface to centralize professional links, AI work, and software engineering projects}
+            \resumeItem{Replaced the outsourced manual digitization of handwritten enrollment forms at a private university with a serverless pipeline that writes straight into the CRM}
+            \resumeItem{Combined OCR extraction, fuzzy matching against institutional catalogs and GPT-based validation; running in production at CEU}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Dataset Creator} $|$ \emph{Python, PDF Processing, JSONL, QA Generation}}{2026}
@@ -180,14 +155,27 @@
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universitat Polit\`ecnica de Val\`encia (UPV)}{Valencia, Spain}
+      {Computer Engineer, Computing Specialization}{Expected 2026}
+      \resumeItemListStart
+        \resumeItem{Certifications in Python for Data Science, Linux Fundamentals, SQL and R for Data Analysis, and Mathematical Foundations for Machine Learning}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Inditex Tech Ambassador} $|$ \emph{Selected for a university STEM talent program with Inditex's global technology teams}}{2026}
+  \resumeSubHeadingListEnd
+
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Generative AI, LLMs \& NLP}{: RAG, fine-tuning, PEFT/QLoRA, LangChain, LlamaIndex, Mastra, Vertex AI, Ollama, ChromaDB, pgvector, Hugging Face Transformers, prompt engineering, RAGAS, BERTScore} \\
-     \textbf{Machine Learning \& Computer Vision}{: PyTorch, TensorFlow, Keras, Scikit-learn, Vision Transformers, OpenCV, MediaPipe} \\
-     \textbf{Data Pipelines, Document AI \& DevOps}{: Azure Document Intelligence, PDF parsing, OCR structuring, data analysis, MLOps, Weights \& Biases, Git, Linux, Docker, pm2, CI/CD with GitHub Actions} \\
-     \textbf{Cloud, Back End \& Front End}{: Google Cloud Platform, Azure Functions, Azure Blob Storage, Node.js, Flask, REST APIs, PostgreSQL, Next.js, React, TypeScript, Tailwind CSS} \\
+     \textbf{Generative AI \& LLMs}{: RAG, fine-tuning (PEFT/QLoRA), LangChain, LlamaIndex, Mastra, Vertex AI, Azure OpenAI, Ollama, ChromaDB, pgvector, Hugging Face Transformers} \\
+     \textbf{Machine Learning}{: PyTorch, TensorFlow, Scikit-learn, OpenCV, Vision Transformers} \\
+     \textbf{Back End, Data \& Cloud}{: Node.js, Flask, REST APIs, PostgreSQL, Google Cloud Platform, Azure Functions, Azure Document Intelligence, Docker, pm2, GitHub Actions CI/CD, Linux} \\
+     \textbf{Front End}{: React, Next.js, TypeScript, Tailwind CSS} \\
      \textbf{Programming Languages}{: Python (advanced), JavaScript/TypeScript, SQL, R, C} \\
      \textbf{Languages Spoken}{: Spanish (native), English (full professional proficiency, Cambridge B2), Valencian (native, GVA certified)}
     }}
